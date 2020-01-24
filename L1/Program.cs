@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
 
-
+//SAAHIL RASHEED
+//U85555983
 namespace Project01_Introduction
-{
+{   
     // All organizing structures use { and } to define their boundaries
     class L1_Program
     {
@@ -57,13 +58,16 @@ namespace Project01_Introduction
 
             //Write your code here
 
-            //int a = 3;
-            //int b = 4;
-            //int c = 5;
-            //int s;
-            //s = (a + b + c) / 2;
-            //double area_triangle = SquareRoot(s * (s - a) * (s - b) * (s - c));
-            //Debug.WriteLine("Area of Triangle is " + area_triangle);
+            int a = Console.ReadLine();
+            decimal a1 = Convert.ToDecimal(a);
+            int b = Console.ReadLine();
+            decimal b1 = Convert.ToDecimal(b);
+            int c = Console.ReadLine();
+            decimal c1 = Convert.ToDecimal(c);
+            int s;
+            s = (a + b + c) / 2;
+            double area_triangle = SquareRoot(s * (s - a) * (s - b) * (s - c));
+            Debug.WriteLine("Area of Triangle is " + area_triangle);
 
 
             // example 3 - selection
