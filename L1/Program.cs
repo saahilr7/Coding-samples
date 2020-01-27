@@ -205,19 +205,18 @@ namespace Project01_Introduction
 
             // Write your code here
             Console.Write("Please enter number: $");
-            int n_pat = Convert.ToDecimal(Console.ReadLine());
-            int sum;
+            string n_pat = Console.ReadLine();
+            int n_pat2 = Convert.ToInt32(n_pat);
 
-            for (int i = 1; i <= n_pat; i++)
+
+            for (int i = 1; i <= n_pat2; i++)
             {
-                for(int j = 1; j <= i; j++)
+                for (int j = 1; j <= i; j++)
                 {
-                    Console.WriteLine("*");
+                    Console.Write("*");
                 }
-                Console.WriteLine("\n");
-            }   
-            Console.WriteLine("Sum of first natural numbers is " + sum);
-
+                Console.Write("\n");
+            }
 
 
             // Exercise 6
@@ -232,6 +231,23 @@ namespace Project01_Introduction
 
             // Write your code here
 
+            Console.Write("Please enter the number of rows:");
+            string r1 = Console.ReadLine();
+            int r2 = Convert.ToInt32(r1);
+
+            for(int i = 1; i <= r2; i++)
+            {
+                for(int j = i; j < r2; j++) //printing spaces in decreasing order of rows
+                {
+                    Console.WriteLine(" ");
+                }
+                for(int j = 1; j <= i; j++) //printing stars in increasing order
+                {
+                    Console.WriteLine("*");
+                }
+                Console.WriteLine("\n");
+            }
+            
 
 
 
